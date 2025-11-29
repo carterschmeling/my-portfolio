@@ -153,31 +153,43 @@ export default function Home() {
           <p className="text-xl text-gray-700 mb-10">
             Ready to get a fire website? Fill out the form and I'll get back to you within 24 hours.
           </p>
-          <form className="space-y-6 max-w-lg mx-auto">
+          <form 
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            className="space-y-6 max-w-lg mx-auto"
+          >
+            <input type="hidden" name="access_key" value="627e215a-1165-4526-8d83-23674a7a4a94" />
+            
             <input 
-              type="text" 
-              placeholder="Your Name" 
-              className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
-              required
-            />
-            <input 
-              type="text" 
-              placeholder="Business Name" 
-              className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
-              required
-            />
-            <input 
-              type="email" 
-              placeholder="Your Email" 
-              className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
-              required
-            />
-            <textarea 
-              placeholder="Tell me about your project..." 
-              rows={5}
-              className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
-              required
-            ></textarea>
+  type="text" 
+  name="name"
+  placeholder="Your Name" 
+  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg text-gray-900 placeholder:text-gray-400"
+  required
+/>
+<input 
+  type="text"
+  name="business" 
+  placeholder="Business Name" 
+  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg text-gray-900 placeholder:text-gray-400"
+  required
+/>
+<input 
+  type="email"
+  name="email" 
+  placeholder="Your Email" 
+  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg text-gray-900 placeholder:text-gray-400"
+  required
+/>
+<textarea 
+  name="message"
+  placeholder="Tell me about your project..." 
+  rows={5}
+  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg text-gray-900 placeholder:text-gray-400"
+  required
+></textarea>
+
+
             <button 
               type="submit" 
               className="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-xl shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
@@ -186,8 +198,7 @@ export default function Home() {
             </button>
           </form>
           <p className="mt-8 text-lg text-gray-600">
-            📞 Text me: (417) 355-5129<br/>
-            ✉️ Email: carter@carterschmeling.com
+            I'll get back to you within 24 hours!
           </p>
         </div>
       </section>
