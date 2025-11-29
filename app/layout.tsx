@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: "Carter's Web Design",
     description:
       "Affordable Websites for Small Businesses | Starting at $10/mo",
-    url: "https://my-portfolio-nine-xi-48.vercel.app",
+    url: "https://carter-webdesign.vercel.app",
     siteName: "Carter's Web Design",
     images: [
       {
-        url: "https://my-portfolio-nine-xi-48.vercel.app/og-image.png",
+        url: "https://carter-webdesign.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Carter's Web Design",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Carter's Web Design",
     description: "Affordable Websites for Small Businesses",
     images: [
-      "https://my-portfolio-nine-xi-48.vercel.app/og-image.png",
+      "https://carter-webdesign.vercel.app/og-image.png",
     ],
   },
 };
